@@ -1,5 +1,7 @@
-const contactBtn = document.getElementByClass("hero-button");
+const contactBtn = document.querySelector(".hero-button");
 
-contactBtn.addEventListener("click", () => {
-  alert("You can contact me at: your.email@example.com");
-});
+if (contactBtn) {
+  contactBtn.addEventListener("click", () => {
+    alert("You can contact me at: your.email@example.com");
+  });
+}
