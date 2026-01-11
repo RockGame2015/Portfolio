@@ -43,6 +43,15 @@ body {
   letter-spacing: 1px;
 }
 
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-link:hover {
+  opacity: 0.9;
+}
+
 .nav-links a {
   margin-left: 2rem;
   text-decoration: none;
