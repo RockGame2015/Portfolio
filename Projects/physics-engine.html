@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics | Software Engineering Portfolio</title>
+    <link rel="stylesheet" href="../css/stylesheet.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo-link">
+                <h1 class="logo">Guillermo Pattenden Ltd.</h1>
+            </a>
+            <nav class="nav-links">
+                <a href="../about.html">About</a>
+                <a href="../projects.html">Projects</a>
+                <a href="../skills.html">Skills</a>
+                <a href="../contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main class="project-page">
+
+    <!-- Hero Section -->
+    <header class="project-hero">
+        <h1>Falling Ball Physics Engine</h1>
+        <p>Interactive Python simulation measuring free-fall motion and velocity of a ball under gravity.</p>
+        <img src="physics-engine-gif.gif" alt="Falling Ball Simulation GIF">
+    </header>
+
+    <!-- Overview -->
+    <section class="project-overview">
+        <h2>Overview</h2>
+        <p>This project simulates a ball falling under gravity using Python and Pygame. Users can set the initial height, watch the ball drop, and view measurements of the last 5 drops, including time and velocity. It's designed to help understand basic mechanics and physics calculations interactively.</p>
+    </section>
+
+    <!-- Features -->
+    <section class="project-features">
+        <h2>Features</h2>
+        <ul>
+        <li>Set initial height and start simulation dynamically.</li>
+        <li>Displays last 5 drops with time and velocity.</li>
+        <li>Shows average time and velocity of recent drops.</li>
+        <li>Graphical visualization of height scale and ground reference.</li>
+        <li>Interactive controls: ENTER to start, R to reset, numeric input for height.</li>
+        </ul>
+    </section>
+
+    <!-- Implementation -->
+    <section class="project-implementation">
+        <h2>Implementation</h2>
+        <p>The engine is built with <strong>Python</strong> and <strong>Pygame</strong>. It uses a simple physics formula for free-fall motion:</p>
+        <pre><code>velocity += gravity * dt
+    height += velocity * dt</code></pre>
+        <p>The positions are converted from meters to pixels for display, and the program keeps a running history of recent drops for measurement display. The simulation runs at 60 FPS using <code>pygame.time.Clock()</code>.</p>
+        <p>Key features implemented:</p>
+        <ul>
+        <li>Dynamic input handling and simulation control.</li>
+        <li>Scaling real-world measurements to screen pixels.</li>
+        <li>History tracking for last 5 drops and averages.</li>
+        <li>Simple GUI layout using Pygame drawing functions.</li>
+        </ul>
+    </section>
+
+    <!-- Demo / Screenshots -->
+    <section class="project-demo">
+        <h2>Demo / Visualization</h2>
+        <p>Below is a GIF showing the ball falling and the measurement panel updating in real-time:</p>
+        <img src="physics-engine-gif.gif" alt="Falling Ball Simulation GIF">
+        <p><strong>Try it yourself:</strong> <a href="https://github.com/yourusername/falling-ball-engine" target="_blank">GitHub Repository</a></p>
+    </section>
+
+    <!-- Resources -->
+    <section class="project-resources">
+        <h2>Resources</h2>
+        <ul>
+        <li><a href="https://github.com/yourusername/falling-ball-engine" target="_blank">GitHub Repository</a></li>
+        <li><a href="https://www.pygame.org/docs/" target="_blank">Pygame Documentation</a></li>
+        </ul>
+    </section>
+
+    </main>
+    <script src="javascript/script.js"></script>
+</body>
+</html>
